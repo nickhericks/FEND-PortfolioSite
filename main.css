@@ -1,12 +1,16 @@
-* {
+/** {
     border: 1px solid red !important;
-}
+}*/
 
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* framework classes */
@@ -37,6 +41,18 @@
 
 .col-4 {
     width: 33.33%;
+}
+
+@media only screen and (max-width: 750px) {
+    .col-4 {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .col-4 {
+        width: 100%
+    }
 }
 
 .col-5 {
@@ -82,15 +98,26 @@
 
 }
 
+.name {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: -10px;
+}
+
+.hero {
+    padding: 0 10px;
+}
+
 .app {
     text-align: center;
     padding: 0 10px;
+    margin-bottom: 40px;
 }
 
 .app-name {
     text-transform: uppercase;
     font-size: 1.5em;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
 }
 
 .app-link {
